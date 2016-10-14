@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="1.兼容网络图片 2.无限轮播 3.任意设置page位置  4.数据刷新ReloadData  5.扩展性极强" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="De3-nE-QoS">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="YVs-bf-tJt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Liszt邀请您加入iOS高级研发群:98787555" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEr-gj-fmb">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EVB-Hb-QUA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6UI-Sc-kIB">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UbS-tZ-dqv"/>
+                                </constraints>
+                                <state key="normal" title="刷新">
+                                    <color key="titleColor" red="1" green="0.27606793652315043" blue="0.22556135306127933" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HoO-1f-nqI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="De3-nE-QoS" firstAttribute="top" secondItem="GEr-gj-fmb" secondAttribute="bottom" constant="25" id="ADh-Se-kv7"/>
+                            <constraint firstAttribute="trailing" secondItem="De3-nE-QoS" secondAttribute="trailing" constant="10" id="BKA-dC-bbd"/>
+                            <constraint firstAttribute="trailing" secondItem="GEr-gj-fmb" secondAttribute="trailing" constant="10" id="F9M-g6-MUB"/>
+                            <constraint firstItem="6UI-Sc-kIB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Ivu-hi-z26"/>
+                            <constraint firstAttribute="trailing" secondItem="6UI-Sc-kIB" secondAttribute="trailing" constant="10" id="UOd-Wo-NuL"/>
+                            <constraint firstItem="GEr-gj-fmb" firstAttribute="top" secondItem="6UI-Sc-kIB" secondAttribute="bottom" constant="20" id="WQS-fm-myh"/>
+                            <constraint firstItem="GEr-gj-fmb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Yhy-iT-ZwL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="De3-nE-QoS" secondAttribute="bottom" constant="20" id="oxk-Oh-iLW"/>
+                            <constraint firstItem="De3-nE-QoS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="s39-AO-yYm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="De3-nE-QoS" id="ZPD-P2-X5O"/>
+                        <outlet property="titleLabel" destination="GEr-gj-fmb" id="eDq-1E-SLR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57" y="-274"/>
+        </scene>
+    </scenes>
+</document>
